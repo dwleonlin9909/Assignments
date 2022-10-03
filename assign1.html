@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment1</title>
+  <style>
+    body{
+      margin: 0;
+      font-family: sans-serif, Arial, Helvetica;
+      display: grid;
+      grid-template-columns: 80fr 20fr;
+      grid-template-rows: 20fr 30fr 5fr;
+      grid-template-areas: "header header"
+                          "section section"
+                          "footer footer";
+      grid-gap:0.001rem;
+    }
+
+    header,
+    aside,
+    main,
+    footer{
+      padding: 16px;
+    }
+
+    header{
+      grid-area: header;
+      min-height: 400px;
+      background-image: url("bg.PNG");
+      background-repeat: no-repeat;
+			background-size: contain;
+      background-color: black;
+    }
+
+    aside h1{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: black;
+      font-family: cursive;
+      border: solid black;
+      position: relative;
+      margin-top: 4rem;
+    }
+
+		aside ul {
+			list-style:none;
+    }
+
+    section {
+			grid-area:section;
+			display:flex;
+			flex-direction: row;
+      min-height: 500px;
+		}
+
+    aside{
+      min-width: 200px;
+      white-space: nowrap;
+      text-align: center;
+      background-color: rgb(237, 227, 188);
+    }
+
+    main{
+      max-width: 1600px;
+      background-color: rgb(244, 224, 151);
+    }
+
+    main h1{
+      margin-top: 4rem;
+    }
+
+    .icon1{
+      background: url(icon1.png) no-repeat 0 0;
+      padding-left: 5px;
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      background-size: 35px auto;
+      vertical-align: middle;
+    }
+
+    .icon2{
+      background: url(icon2.png) no-repeat 0 0;
+      padding-left: 5px;
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      background-size: 35px auto;
+      vertical-align: middle;
+    }
+
+    .icon3{
+      background: url(icon3.png) no-repeat 0 0;
+      padding-left: 5px;
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      background-size: 35px auto;
+      vertical-align: middle;
+    }
+
+    .icon4{
+      background: url(icon4.png) no-repeat 0 0;
+      padding-left: 5px;
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      background-size: 35px auto;
+      vertical-align: middle;
+    }
+    
+    .icon5{
+      background: url(icon5.png) no-repeat 0 0;
+      padding-left: 5px;
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      background-size: 35px auto;
+      vertical-align: middle;
+    }
+
+    .nav{
+      max-width: 25px;
+      max-height: 25px;
+      list-style: none;
+      padding-inline-start: 30px;
+      padding-inline-end: 30px;
+      float: right;
+      left: -50%;
+      position: relative;
+      font-size: larger;
+    } 
+
+    .item{
+      margin: 10px 0;
+    }
+
+    footer{
+      grid-area: footer;
+      background-color: black;
+      font-size: large;
+      align-items: center;
+    }
+
+    .nav-list{
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+
+    .nav-item{
+      margin: 0 10px;
+    }
+
+    aside ul{
+        list-style-type: none;
+        flex-direction: row-reverse;
+        justify-content: center;
+        padding: 8px 16px;
+        margin: 1px 0px;
+    }
+
+    aside ul a{
+        color: black;
+        text-decoration: none;
+    }
+    aside ul a:hover{
+        background-color:black;
+        color: white;
+    }
+
+    footer ul{
+        list-style-type: none;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        padding: 8px 16px;
+        margin: 1px 0px;
+    }
+
+    footer ul a{
+        color: rgb(204, 172, 31);
+        padding: 8px 16px;
+        margin: 1px 0px;
+        background-color: black;
+        text-decoration: none;
+    }
+
+    footer ul a:hover{
+        background-color:rgb(204, 172, 31);
+        color: black;
+    }
+
+    video{
+      width: 50%;
+    }
+    </style>
+</head>
+<body>
+  <header>
+    
+  </header>
+  <section>
+    <aside>
+      <h1>
+        <font size= 5>Leon's Taco Code</font>
+      </h1>
+      <ul class="nav">
+        <li class="item"><a href="assign1.html"><span class="icon1"></span>Assignment 1</a></li>
+        <li class="item"><a href="assign2.html"><span class="icon2"></span>Assignment 2</a></li>
+        <li class="item"><a href="assign3.html"><span class="icon3"></span>Assignment 3</a></li>
+        <li class="item"><a href="assign4.html"><span class="icon4"></span>Assignment 4</a></li>
+        <li class="item"><a href="assign5.html"><span class="icon5"></span>Assignment 5</a></li>
+      </ul>
+    </aside>
+
+    <main>
+      <h1>Assignment 1</h1>
+      <p>This is my first assignment about Taco and Coding.</p>
+      <hr><br>
+      <p>
+        Nowadays, "juan" (gyun2) is a word that often refers to having high expectations of oneself and being in a good competitive state (both for oneself and for others) at all times. However, the roll I mention here is a type of food that represents pleasure and is called taco. It is also the hope that I can gain knowledge and have fun at the same time as learning this coding course (as happy as my favourite footballer lebron james is in the video).
+      </p>
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/9YRDVaW1qA4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vitae turpis aliquam sem efficitur vestibulum. Phasellus in venenatis est. Maecenas varius, tellus vel congue sodales, lectus ipsum fringilla elit, at elementum mauris tellus in odio. Nulla id blandit massa. Maecenas dictum ipsum justo, vitae iaculis ipsum finibus quis. Integer vel nisl tincidunt enim sodales cursus. Morbi finibus hendrerit orci. Nunc feugiat justo at varius facilisis. Nunc ut faucibus nibh. Etiam nisl nulla, rhoncus id sollicitudin condimentum, hendrerit quis orci. Aenean sed ultrices massa. Integer nulla est, tempus sed elit vel, efficitur vestibulum orci. Etiam auctor sodales nibh in vulputate.
+      </p><br>More descriptions can be found in my <a href="https://hkdesign.org/having-fun-with-html-and-css/" target="_blank">journal</a>.
+    </main>
+    
+  </section>
+  <footer>
+    <ul class="nav-list">
+      <li class="nav-item"><a href="index.html">Terms of Use</a></li>
+      <li class="nav-item"><a href="index.html">Support</a></li>
+  </footer>
+</body>
+</html>
