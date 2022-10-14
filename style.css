@@ -203,6 +203,12 @@ video{
   max-width: 750px;
 }
 
+#Img4 {
+  margin: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
 .black_overlay{ 
   display: none; 
   position: fixed; 
