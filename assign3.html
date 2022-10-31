@@ -5,8 +5,57 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Assignment3</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>This is Assignment3.</h1>
+  <header></header>
+  <section>
+    <aside>
+      <!--<h1>
+        <font size=5>Leon's Taco Code</font>
+      </h1>-->
+      <ul class="nav">
+        <li class="item"><a href="assign1.html"><span class="icon1"></span>Assignment 1</a></li>
+        <li class="item"><a href="assign2.html"><span class="icon2"></span>Assignment 2</a></li>
+        <li class="item"><a href="assign3.html"><span class="icon3"></span>Assignment 3</a></li>
+        <li class="item"><a href="assign4.html"><span class="icon4"></span>Assignment 4</a></li>
+        <li class="item"><a href="assign5.html"><span class="icon5"></span>Assignment 5</a></li>
+      </ul>
+    </aside>
+
+    <main>
+      <div> 
+        <div id="myModal" class="modal" onclick="document.getElementById('myModal').style.display='none'">
+          <img class="content" id="img" onclick = "document.getElementById('myModal').style.display ='none' ;document.getElementById('fade').style.display='none'"/>
+        </div>
+        <div id="fade" class="black_overlay"></div>
+        <script>
+        function demo(imgId) {
+            document.getElementById('myModal').style.display = "block"
+            document.getElementById('fade').style.display='block';
+            document.getElementById("img").src = document.getElementById(imgId).src;
+        }
+        </script>
+      </div>
+      <h1>Assignment 3</h1>
+      <p>This is my THIRD assignment about How to narrow the scope.</p>
+      <hr>
+      <p>
+        Basketball is one of the three major sports in the world and a very popular sport in China. According to research, the proportion of the population aged 6 to 65 playing basketball in the country is 10.9% and the proportion of people who play basketball as their main sport is 6.7%. This figure is the highest of all ball sports and at the top of the list of all sports. With basketball becoming more and more popular, the corresponding knowledge of basketball should not be left behind.
+      </p>
+      <img id="Img1" class="myImg" src="0.png" height="400px"  alt="There supposed to be an image here.">
+      <p>As we all know, as a spectator, watching a good game is certainly enjoyable, but as a former basketball practitioner, I always struggle to find information on tactics and training methods. To solve this problem, I always have to look for information on different platforms, as there is no one platform that has a complete list of information. This means that one has to consolidate information from different places on one's own and, in general, there is a lack of consistency in this information, which requires comparison during the collection process. This is certainly a waste of manpower and time.
+      </p>
+      <p>With this problem in mind, I wanted to create a comprehensive website that could cover information about basketball training to meet the needs of basketball practitioners in different scenarios. Specifically, they can find any information they want on the website, such as pre-game warm-up advice and tactical adaptations during games, etc., so that they can be better prepared when facing different opponents.
+      </p>
+      <br>More descriptions can be found in my <a href="https://hkdesign.org/kind-of-blog-on-my-pm-learning/" target="_blank">journal</a>.
+    </main>
+    
+  </section>
+  <footer>
+    <ul class="nav-list">
+      <li class="nav-item"><a href="index.html">Terms of Use</a></li>
+      <li class="nav-item"><a href="index.html">Support</a></li>
+  </footer>
 </body>
 </html>
